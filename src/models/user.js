@@ -47,8 +47,14 @@ const userSchema = new mongoose.Schema({
     timestamps: true
 })
 
-userSchema.virtual('groups', {
-    ref: 'Group',
+userSchema.virtual('entries', {
+    ref: 'Entry',
+    localField: '_id',
+    foreignField: 'owner'
+})
+
+userSchema.virtual('paymentMethods', {
+    ref: 'PaymentMethods',
     localField: '_id',
     foreignField: 'owner'
 })

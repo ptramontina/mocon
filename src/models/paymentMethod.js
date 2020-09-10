@@ -2,14 +2,14 @@ const mongoose = require('mongoose')
 
 const paymentMethodSchema = new mongoose.Schema({
     description: {
-        type: Number,
+        type: String,
         required: true,
     },
-    // owner: {
-    //     type: mongoose.Schema.Types.ObjectId,
-    //     required: true,
-    //     ref: 'User'
-    // }
+    owner: {
+        type: mongoose.Schema.Types.ObjectId,
+        required: true,
+        ref: 'User'
+    }
 }, {
     timestamps: true
 })
