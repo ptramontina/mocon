@@ -21,7 +21,7 @@
     "mongodb": "^3.6.0",
     "mongoose": "^5.9.28",
     "mqtt": "^4.2.0",
-    "validator": "^13.1.1"
+    "validator": "^13.7.0"
   },
   "devDependencies": {
     "env-cmd": "^10.1.0",
